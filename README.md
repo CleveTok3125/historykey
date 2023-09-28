@@ -1,10 +1,10 @@
 ## Description
 The script file automatically get the wish history link used for paimon.moe on Windows
 ## Guide
-1. [Install dependencies](#Install-dependencies)
-2. [Set up configuration](Set-up-configuration)
-3. [About historykey.ps1](#About-historykey.ps1)
-4. [Run](#Run)
+1. [Install dependencies](#install-dependencies)
+2. [Set up configuration](set-up-configuration)
+3. [About historykey.ps1](#about-historykey.ps1)
+4. [Run](#run)
 ### Install dependencies
 `pip install -r requirements.txt`
 

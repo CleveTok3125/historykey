@@ -8,7 +8,7 @@ The script file automatically get the wish history link used for paimon.moe on W
 ### Install dependencies <a name="install-dependencies"></a>
 `pip install -r requirements.txt`
 
-*Note: `historykey.exe` - executable version of `historykey.py` that can be run without installing dependencies.*
+*Note: [historykey.exe](https://github.com/CleveTok3125/historykey/releases/) - executable version of `historykey.py` that can be run without installing dependencies.*
 ### Set up configuration <a name="set-up-configuration"></a>
 Open historykey.ini with notepad or similar to configure
 ### About historykey.ps1 <a name="about-historykey.ps1"></a>

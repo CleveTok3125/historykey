@@ -40,17 +40,15 @@ elif is_running():
 elif is_depen_exst() == False:
 	win32api.MessageBox(0, 'Could not find dependency file "historykey.ps1"', "Error")
 else:
-	while True:
-		try:
-			if wish_history():
-				break
-			else:
+	if not wish_history():
+		while True:
+			try:
 				processes = psutil.pids()
 				for process in processes:
 					name = psutil.Process(process).name()
 					if "GenshinImpact" in name:
 						if wish_history():
 							break
-		except:
-			None
-		time.sleep(1)
+			except:
+				None
+			time.sleep(1)

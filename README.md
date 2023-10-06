@@ -5,7 +5,7 @@ The application automatically get the wish history link used for paimon.moe on W
 [Download](https://github.com/CleveTok3125/historykey/releases) and run `historykey.exe`
 #### To run every time the computer starts
 **Windows + R** to open Run
-```shell:startup```
+`shell:startup`
 Paste the shortcut into the startup folder
 ## Guide
 1. [Set up environment](#Set-up-environment)

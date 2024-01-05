@@ -1,4 +1,4 @@
-import time, subprocess, win32api, psutil, os, sys
+import time, subprocess, win32api, psutil, os, sys, warnings
 
 def wish_history():
 	powershell_command = 'Powershell.exe -executionpolicy remotesigned -File  historykey.ps1'
@@ -10,7 +10,7 @@ def wish_history():
 		win32api.MessageBox(0, output[0:50]+"..."+output[round(len(output)/2)-25:round(len(output)/2)+25]+"..."+output[-50:-1], "Link copied to clipboard")
 		return True
 	elif "Cannot find the wish history url! Make sure to open the wish history first!" in output:
-		raise ValueError("Cannot find the wish history url! Make sure to open the wish history first!")
+		warnings.warn('Cannot find the wish history url! Make sure to open the wish history first!')
 		return False
 	else:
 		return False
